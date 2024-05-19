@@ -13,10 +13,22 @@ votos.forEach(voto => {
 });
 
 let mapaVencedor;
-let maxVotos = 0;
+let maxVotos = 8;
 
 // TODO: Itere sobre cada mapa na contagem de votos para encontrar o vencedor
-for () {
+//for () {
+//}
+
+let mapaA = contagemVotos.A
+let mapaB = contagemVotos.B
+let mapaC = contagemVotos.C
+
+if(mapaA > mapaB && mapaA > mapaC){
+  mapaVencedor = 'A'
+}else if(mapaB > mapaA && mapaB > mapaC){
+  mapaVencedor = 'B'
+}else if(mapaC > mapaA && mapaC > mapaB){
+  mapaVencedor = 'C'
 }
 
 console.log(mapaVencedor);
